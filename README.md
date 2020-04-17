@@ -1,3 +1,3 @@
 # ArrayVisualizer
 
-> this is just a little Project to learn Angular
+> this is just a little Project to learn Vue.js
