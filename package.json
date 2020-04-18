@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/7h3730B/7hArray-visualizer/issues"
   },
-  "homepage": "https://github.com/7h3730B/7hArray-visualizer#readme"
+  "homepage": "https://github.com/7h3730B/7hArray-visualizer#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "path-exists": "^4.0.0"
+  }
 }
