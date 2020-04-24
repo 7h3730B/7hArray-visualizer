@@ -1,7 +1,7 @@
 <template>
   <v-app id="app">
     <navbar :min="min" :max="max" :startValue="startValue" />
-    <page :width="max"/>
+    <page :width="max" />
   </v-app>
 </template>
 
@@ -21,5 +21,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
