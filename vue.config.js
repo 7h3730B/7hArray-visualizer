@@ -1,6 +1,5 @@
 module.exports = {
   transpileDependencies: ["vuetify"],
-  publicPath: process.env.NODE_ENV === 'production' ?
-    '/7hArray-visualizer/' :
-    '/'
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/7hArray-visualizer/" : "/"
 };

@@ -2,7 +2,7 @@
   <v-app id="app">
     <navbar :min="min" :max="max" :startValue="startValue" />
     <v-container>
-      <canvas id="arrayCanvas" width="1400" height="900"></canvas>
+      <canvas id="arrayCanvas" :width="width" :height="max"></canvas>
     </v-container>
   </v-app>
 </template>
@@ -16,15 +16,14 @@ export default {
     navbar
   },
   data() {
-    return { min: 1, max: 900, startValue: 200 };
+    return { width: window.innerWidth - 300, min: 1, max: 690, startValue: 50 };
   }
 };
 </script>
 
-  <style lang="css" scoped>
+<style lang="css" scoped>
 canvas {
   margin: 0 auto;
-  margin-bottom: 1rem;
   display: block;
 }
 </style>
