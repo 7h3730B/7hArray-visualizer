@@ -1,25 +1,31 @@
 {
-  "name": "array-visualizer",
-  "version": "0.0.1",
-  "description": "A little Array visualizer",
-  "main": "index.js",
+  "name": "7harray-visualizer",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/7h3730B/7hArray-visualizer.git"
-  },
-  "author": "7h3730B",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/7h3730B/7hArray-visualizer/issues"
-  },
-  "homepage": "https://github.com/7h3730B/7hArray-visualizer#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.3"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "path-exists": "^4.0.0"
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vuetify": "^2.2.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^1.19.1",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-vuetify": "~2.0.5",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.3.0"
   }
 }
