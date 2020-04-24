@@ -1,18 +1,18 @@
 <template>
   <v-app id="app">
     <navbar :min="min" :max="max" :startValue="startValue" />
-    <page :width="max" />
+    <v-container>
+      <canvas id="arrayCanvas" width="1400" height="900"></canvas>
+    </v-container>
   </v-app>
 </template>
 
 <script>
 import navbar from "./components/navbar.vue";
-import page from "./components/page.vue";
 
 export default {
   name: "App",
   components: {
-    page,
     navbar
   },
   data() {
@@ -21,4 +21,10 @@ export default {
 };
 </script>
 
-<style></style>
+  <style lang="css" scoped>
+canvas {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+</style>

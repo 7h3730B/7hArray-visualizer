@@ -52,17 +52,20 @@ export default {
         console.log(this.value);
 
         let a = [];
-        for (let i = 0; i < this.value; i++) a[i] = i;
-        let tmp;
-        let current;
-        let top = a.length;
-        if (top)
-          while (--top) {
-            current = Math.floor(Math.random() * (top + 1));
-            tmp = a[current];
-            a[current] = a[top];
-            a[top] = tmp;
-          }
+
+        a = [...Array(this.value)].map(() => Math.floor(Math.random() * 900));
+
+        // for (let i = 0; i < this.value; i++) a[i] = i;
+        // let tmp;
+        // let current;
+        // let top = a.length;
+        // if (top)
+        //   while (--top) {
+        //     current = Math.floor(Math.random() * (top + 1));
+        //     tmp = a[current];
+        //     a[current] = a[top];
+        //     a[top] = tmp;
+        //   }
         // TODO: Render array new
         functions.array = a;
         functions.draw();
